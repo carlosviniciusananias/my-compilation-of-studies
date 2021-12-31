@@ -1,114 +1,65 @@
-📢 Use this project, [contribute](https://github.com/{OrganizationName}/{AppName}) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
-
-# APP NAME
-
-<!-- DOCS-IGNORE:start -->
+# Store theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-<!-- DOCS-IGNORE:end -->
+Our boilerplate theme to create stores in the VTEX IO platform.
 
-Under the app's name, you should explain the topic, giving a **brief description** of its **functionality** in a store when installed.
+## Preview
+![store-theme-default](https://user-images.githubusercontent.com/1354492/63937047-e8d81c80-ca37-11e9-86fc-61e88847bbfb.png)
 
-Next, **add media** (either an image of a GIF) with the rendered components, so that users can better understand how the app works in practice. 
+## Tutorial
+To understand how things work check our tutorial [Build a store using VTEX IO](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/)
 
-![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
+## Dependencies
+All store components that you see on this document are open source too. Production ready, you can found those apps in this GitHub organization.
 
-## Configuration 
+Store framework is the baseline to create any store using _VTEX IO Web Framework_.
+- [Store](https://github.com/vtex-apps/store/blob/master/README.md)
 
-In this section, you first must **add the primary instructions** that will allow users to use the app's blocks in their store, such as:
+Store GraphQL is a middleware to access all VTEX APIs.
+- [Store GraphQL](https://github.com/vtex-apps/store-graphql/blob/master/docs/README.md)
 
-1. Adding the app as a theme dependency in the `manifest.json` file;
-2. Declaring the app's main block in a given theme template or inside another block from the theme.
+### Store Component Apps
+- [Header](https://github.com/vtex-apps/store-header/blob/master/docs/README.md)
+- [Footer](https://github.com/vtex-apps/store-footer/blob/master/docs/README.md)
+- [Slider Layout](https://github.com/vtex-apps/slider-layout/blob/master/docs/README.md)
+- [Shelf](https://github.com/vtex-apps/shelf/blob/master/docs/README.md)
+- [Telemarketing](https://github.com/vtex-apps/telemarketing/blob/master/docs/README.md)
+- [Menu](https://github.com/vtex-apps/menu/blob/master/docs/README.md)
+- [Login](https://github.com/vtex-apps/login/blob/master/docs/README.md)
+- [Minicart](https://github.com/vtex-apps/minicart/blob/master/docs/README.md)
+- [Category Menu](https://github.com/vtex-apps/category-menu/blob/master/docs/README.md)
+- [Product Summary](https://github.com/vtex-apps/product-summary/blob/master/docs/README.md)
+- [Breadcrumb](https://github.com/vtex-apps/breadcrumb/blob/master/docs/README.md)
+- [Search Result](https://github.com/vtex-apps/search-result/blob/master/docs/README.md)
+- [Product Details](https://github.com/vtex-apps/product-details/blob/master/docs/README.md)
+- [Store Components](https://github.com/vtex-apps/store-components/blob/master/docs/README.md)
+- [Order Placed](https://github.com/vtex-apps/order-placed/blob/master/docs/README.md) 
 
-Remember to add a table with all blocks exported by the app and their descriptions. You can verify an example of it on the [Search Result documentation](https://vtex.io/docs/components/all/vtex.search-result@3.56.1/). 
+### Store Pixel Apps
 
-Next, add the **props table** containing your block's props. 
+ - [Facebook Pixel](https://github.com/vtex-apps/facebook-pixel/blob/master/docs/README.md)
+ - [Google Tag Manager](https://github.com/vtex-apps/google-tag-manager/blob/master/docs/README.md)
 
-If the app exports more than one block, create several tables - one for each block. For example:
+## Contributing
 
-### `block-1` props
-
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
-
-
-### `block-2` props
-
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
-
-Prop types are: 
-
-- `string` 
-- `enum` 
-- `number` 
-- `boolean` 
-- `object` 
-- `array` 
-
-When documenting a prop whose type is `object` or `array` another prop table will be needed. You can create it following the example below:
-
-- `propName` object:
-
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
-
-
-Remember to also use this Configuration section to  **showcase any necessary disclaimer** related to the app and its blocks, such as the different behavior it may display during its configuration. 
-
-## Modus Operandi *(not mandatory)*
-
-There are scenarios in which an app can behave differently in a store, according to how it was added to the catalog, for example. It's crucial to go through these **behavioral changes** in this section, allowing users to fully understand the **practical application** of the app in their store.
-
-If you feel compelled to give further details about the app, such as it's **relationship with the VTEX admin**, don't hesitate to use this section. 
-
-## Customization
-
-The first thing that should be present in this section is the sentence below, showing users the recipe pertaining to CSS customization in apps:
-
-`In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization).`
-
-Thereafter, you should add a single column table with the available CSS handles for the app, like the one below. Note that the Handles must be ordered alphabetically.
-
-| CSS Handles |
-| ----------- | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` |
-
-
-If there are none, add the following sentence instead:
-
-`No CSS Handles are available yet for the app customization.`
-
-<!-- DOCS-IGNORE:start -->
+Check it out [how to contribute](https://github.com/vtex-apps/awesome-io#contributing) with this project.
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people:
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://www.hugoccosta.com"><img src="https://avatars2.githubusercontent.com/u/20212776?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Costa</b></sub></a><br /><a href="https://github.com/vtex-apps/store-theme/commits?author=hugocostadev" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
-
-<!-- DOCS-IGNORE:end -->
-
----- 
-
-Check out some documentation models that are already live: 
-- [Breadcrumb](https://github.com/vtex-apps/breadcrumb)
-- [Image](https://vtex.io/docs/components/general/vtex.store-components/image)
-- [Condition Layout](https://vtex.io/docs/components/all/vtex.condition-layout@1.1.6/)
-- [Add To Cart Button](https://vtex.io/docs/components/content-blocks/vtex.add-to-cart-button@0.9.0/)
-- [Store Form](https://vtex.io/docs/components/all/vtex.store-form@0.3.4/)
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

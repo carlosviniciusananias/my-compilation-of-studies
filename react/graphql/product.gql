@@ -1,0 +1,11 @@
+query product($slug: String) {
+    product(slug: $slug) {
+        items {
+            images {
+                imageId
+                imageUrl
+                imageLabel
+            }
+        }
+    }
+}
